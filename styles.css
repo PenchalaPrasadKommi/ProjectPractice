@@ -8,15 +8,17 @@ body{
 h2{
   text-align: center;
   font-weight: lighter;
-  color: #4CAF50;
-  padding: 1em;
+  color: orangered;
+  padding: 0;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .intro{
   text-align: center;
-  color: rgb(29, 54, 138);
-  padding-bottom: 1em;
+  font-size: larger;
+  color: rgb(122, 92, 206);
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .container{
@@ -28,35 +30,49 @@ h2{
 
 .grid-container {  
   display: grid;
-  grid-gap: 5px;
+  grid-gap: 1rem;
   padding: 1rem;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px;
+  padding: 1rem;
   font-size: 30px;
 }
 
+.grid-item:hover{
+  color: orangered;
+}
+
 .item1 {
+  grid-column: 1 / 4;
+  grid-row:1/3;
   box-sizing: border-box;
-  grid-column: 1 / span 2;
-  background: rgba(76, 175, 80, 0.3);
-  border-radius: 5px;
+  background: rgba(102, 102, 255, 0.3);
+  border-radius: 2rem;
+  height: auto;
+  font-size: x-large;
 }
 
 .item2 {
+  grid-row:  1/ 2;
+  grid-column: 4/6;
   box-sizing: border-box;
-  padding: 5px 0;
-  background: rgba(76, 175, 80, 0.3);
+  background: rgba(102, 102, 255, 0.3);
   border-radius: 5px;
+  font-size: larger;
+  border-radius: 1rem;
 }
 
 .item3 {
+  grid-row:  2;
+  grid-column: 4/6;
   box-sizing: border-box;
-  background: rgba(76, 175, 80, 0.3);
+  background: rgba(102, 102, 255, 0.3);
   border-radius: 5px;
+  font-size: larger;
+  border-radius: 1rem;
 }
 
 .notes{
@@ -71,15 +87,29 @@ h2{
   align-content: center;
   grid-template-columns: auto auto ;
   grid-gap: 10px;
-  background-color: lightblue;
   padding: 10px;
+  
 }
 
 .review-container > div {
-  background-color: orange;
+  background: rgba(102, 102, 255, 0.3);
   text-align: center;
   padding: 20px 0;
   font-size: normal;
+  border-radius: 1rem;
+}
+.review-container > div:hover{
+  color: orangered;
+}
+
+.name-review{
+  font-size: larger; 
+  font-weight: bold;
+}
+
+.place-review{
+  font-size: large; 
+  font-weight: 900;
 }
 
 .head-review img {
@@ -139,7 +169,7 @@ label {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: orangered;
   color: white;
   padding: 12px 20px;
   border: none;
