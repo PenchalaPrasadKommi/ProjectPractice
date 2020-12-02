@@ -1,439 +1,177 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-
-  body{
-      font-family: poppins;
-      background-color: lightgray;
-      line-height: 1.5;
-  }
-
-  /* .container{
-    clear: both;
-    width:80%;
-    margin-top: 100px;
-    margin:auto;
-    position: relative;
-    overflow: hidden;
-  } */
-
-  ul{
-      list-style-type: none;
-  }
-
-  a{
-      color: inherit;
-      cursor: pointer;
-      text-decoration: none;
-  }
-
-  .navbar{
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 10;
-      width: 100%;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: rgb(235, 94, 38);
-      padding: 35px 100px 0;
-      background: #35424a;
-      height: auto;
-      border-bottom: orangered 3px solid;
-  }
-
-  header h2 a{
-    font-size:larger ;
-      font-weight: 700;
-  }
-
-  header .nav{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    font-size:larger ;
-    font-weight: 700;
-  }
-
-  header .nav li{
-      margin: 0 10px;
-  }
-
-  header .nav li:;:last-child{
-      margin-right: 0;
-  }
-
-  @media(max-width: 1000px){
-      header{
-          padding: 20px 50px;
-      }
-      header .nav li a{
-          font-size: 12px;
-      }
-  }
-
-  @media(max-width: 700px){
-      header{
-          flex-direction: column;
-      }
-      header h2{
-          margin-bottom: 15px;
-      }
-      header .nav li a{
-        margin: 0 7px;
-    }
-  }
-
-  /* section{
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 110px 100px;
-    color: rgb(64, 179, 108);
-  } */
-
-  /* @media(max-width: 1000px){
-      section{
-          padding: 110px 50px;
-      }
-  }
-
-  @media(max-width: 600px){
-    section{
-        padding: 125px 30px;
-    }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size:15px;
+  line-height: 1.5;
+  padding: 0;
+  margin:0;
+  background-color: lightgray;
 }
-.banner-area{
-    position: relative;
-    justify-content: center;
-    min-height: 100vh;
-    color: rgb(22, 123, 163);
-    text-align: center;
-}
-.banner-area .banner-img{
-    background-image: url(https://images.unsplash.com/photo-1441911645956-df6e9bbc5496?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhcm1pbmFyfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60) ;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    z-index: -1;
-
-}
-
-.banner-area h2{
-    margin-bottom: 15px;
-    font-size: 35px;
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-.banner-area h3{
-    font-size: 70px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-
-@media(max-width: 800px){
-    .banner-area{
-        min-height: 600px;
-    }
-    .banner-area h2{
-        font-size: 27px;
-    }
-    .banner-area h3{
-        font-size: 20px;
-    }
-} */
-
   
-  /* .container{
-    clear: both;
-    width:80%;
-    margin-top: 100px;
-    margin:auto;
-    position: relative;
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 20px;
     overflow: hidden;
-  }
-  nav{
-    display: flex;
-    background: #35424a;
-    height: auto;
-    width: 100%;
+    background-color: #35424a;
     border-bottom: orangered 3px solid;
   }
-
-  div.logo{
-      width: 20%;
-  }
-
-  div.navbar{
-      width: 80%;
-  }
   
-  /* label.logo{
-    line-height: 80px;
-    padding: 0 100px;
-    font-size: 35px;
-    color: #ffffff;
-    font-weight: bold;
-  } */
-  /* nav ul{
-    float: right ;
-    margin-right: 20px;
-  }
-  nav ul li{
-    list-style: none;
-    display: inline-block;
-    /* line-height: 80px; */
-    /* margin: 0 5px;
-  }
-  nav ul li a{
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
-  a.active,a:hover{
-    color:#cccccc ;
-    transition: .5s;
-  }
-  .checkbtn{
-    font-size: 30px;
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
     color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
   }
-  #check{
-    display: none;
-  }
-  @media (max-width:952px){
-    /* label.logo{
-        font-size: 30px;
-        padding-left: 50px;
-    } */
-    /* nav ul li a{
-        font-size: 16px;
-    }
-  }
-  @media (max-width:770px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-        position: fixed;
-        width: 100%;
-        height: 100vh;
-        background: #2c3e50;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li{
-        display: block;
-        margin: 50px 0;
-        line-height: 30px;
-        justify-content: space-evenly;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    a:hover,a.active{
-        background: none;
-        color: #0082e6;
-    }
-    #check:checked ~ ul{
-        left: 0; */
-    }
-    } */ */
   
-  /* footer part*/
-  /* .fa {
+  ul.topnav li a:hover{color: #111;}
+  
+  ul.topnav li.right {float: right;}
+  
+  
+  @media screen and (max-width: 652px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+
+  @media screen and (max-width: 1600px) {
+      ul.topnav li a{
+      font-size: large;
+      }
+    }
+
+    footer{
+      padding-top:10px;
+      margin-top: 20px;
+      color:white;
+      background-color: #e8491d;
+      text-align: center;
+  }
+  
+      /* footer part*/
+  .fa {
     padding: 10px;
     font-size: 30px;
     width: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-  } */
+  }
   
   /*  hover effect  */
-  /* .fa:hover {
+  .fa:hover {
     opacity: 0.7;
-  } */
+  }
   
   /*  specific color for each brand */
   
-  /* Facebook
+  /* Facebook */
   .fa-facebook {
-    color: white;
-  }
-  
-  /* Twitter */
-  /* .fa-twitter {
-    color: white; */
-  }
-  /* instagram */
-  /* .fa-instagram {
-    color: white;
-  } */ */
-  
-  /* #sec{
-    width: 100%;
-    height: 60vh;
-    background:url('../CSS/../Images/charminar0.jpg') center no-repeat;
-    background-size: cover;
-    text-align: center;
-    color:white;
-  }
-  #sec h1{
-    margin-top: 100px;
-    font-size: 55px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-shadow:2px 2px 2px black;
-  }
-  #sec p{
-    font-size: 20px;
-    text-shadow:2px 2px 2px black;
-  }
-  #boxes{
-    margin-top: 20px;
-  }
-  #boxes .box{
-    float: left;
-    text-align: center;
-    width: 30%;
-    padding:15px;
-  }
-  #boxes .box img{
-    width:90px;
-  }
-  footer{
-    padding:10px;
-    margin-top: 10px;
-    color:white;
-    background-color: #e8491d;
-    text-align: center;
-  }
-  .center {
-    text-align: center;
-   } */
-  
-  
-  /*booking styles*/
-  /* .book{
-    background-color: lightgray;
-  
-  }
-  .input-group{
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-    margin-right: 1%;
-    margin-left:1% ;
-      
-  }
-  .input-label{
-    display: block;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color:black;
-    font-weight: bold;
-    justify-content: space-around; */
-  /* }
-  .input, .options{
-    width:60%;
-    min-height: 1rem;
-    padding:0.5em;
-    font-weight: bold;
-    color: #a5a5a5;
-    letter-spacing: 2px;
-    font-family: "open Sans", sans-serif;
-    resize:none;
-  }
-  .btn-orange{
-    background-color: lightseagreen;
-    margin-bottom: 1.5rem;
-    text-decoration: none;
-    margin-left: 1%;
-    margin-right: 1%;
-    border-radius: 30px;
-    width: 100px;
-  
-  }
-  .btn-orange:hover{
-    background-color: darkcyan;
-  }
-  #grid-item .checked {
-    color:orange
-  }
-  .head-hotel{
-    text-align: center;
-    margin-bottom: 5rem;
-  }
-  .heading{
-    display: block;
-    font-weight: bold;
-    font-size: 2rem;
-    text-transform: uppercase;
-  }
-  .sub-heading{
-    font-size: 1.7rem;
-    font-family: 'courgette',cursive;
-    font-weight: 300;
-    color: #a5a5a5;
-  /* } */
-  .grid{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
-    grid-gap: 2.5rem;
+      color: white;
+    }
     
-  }
-  .grid-item{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    justify-content: center;
-  }
-  .hotel-image{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -2;
-  }
-  .hotel-name{
-    font-size: 2rem;
-    margin-top: 0;
-    margin-bottom: 0; */
-  /* }
-  .hotel-price{
-    font-size: 1rem;
-  } */ */
-  
-  
+    /* Twitter */
+    .fa-twitter {
+      color: white;
+    }
+    /* instagram */
+    .fa-instagram {
+      color: white;
+    }
+    .footer-notes{
+        margin: 0;
+    }
+
+    .gallery{
+    margin:5px;
+    float:left;
+    width:390px;
+    border:1px solid white;
+}
+
+.gallery img{
+    width:100%;
+    height:50vh;
+}
+
+.images{
+  margin-bottom: 1200px;
+}
+.desc{
+    padding:20px;
+    text-align:center;
+}
+    
+
+h1{
+    text-align:center;
+    max-width:100%;
+    color:whitesmoke;
+}
+
+h2{
+    text-align:center;
+    color:olive;
+
+}
+
+
+
+head{
+    margin-top:0.5rem;
+    color:darkcyan;
+    text-align:center;
+}
+
+img{
+    max-width: 100%;
+    margin:0%;
+    
+}
+
+.grid .btn{
+    float:right;
+    background:black;
+    width:100px;
+    border:none;
+    outline:none;
+    color:#FFFFFF;
+    height:30px;
+    border-radius:30px;
+    margin-top:18px;
+    box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3);
+}
+
+.grid .btn{
+    background-color:black;
+    float:right;
+    
+
+}
+
+
+
+
+
+@media only screen and (min-width: 481px){
+    /* tablet layout */
+    img{
+           width:45%;
+    }
+}
+
+@media only screen and (min-width:769px){
+    /* desktop layout */
+    img{
+           width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+}
